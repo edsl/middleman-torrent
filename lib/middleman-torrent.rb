@@ -1,5 +1,5 @@
-require 'middleman-torrent/version'
+require 'middleman-core'
+require 'middleman-torrent/extension'
 
-module MiddlemanTorrent
-  # Your code goes here...
-end
+# Register this extension with middleman
+Middleman::Extensions.register(:torrent, MiddlemanTorrent::Extension)
