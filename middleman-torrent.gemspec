@@ -6,11 +6,11 @@ require 'middleman-torrent/version'
 Gem::Specification.new do |spec|
   spec.name          = 'middleman-torrent'
   spec.version       = MiddlemanTorrent::VERSION
-  spec.authors       = ['Mauricio Pasquier Juan']
-  spec.email         = ['mauricio@pasquierjuan.com.ar']
+  spec.authors       = ['En Defensa del Software Libre']
+  spec.email         = ['edsl@hackcoop.com.ar']
   spec.summary       = %q{A Middleman extension to bundle your site as a torrent.}
   spec.description   = %q{A Middleman extension to bundle your site as a torrent.}
-  spec.homepage      = 'https://github.com/mauriciopasquier/middleman-torrent'
+  spec.homepage      = 'https://github.com/edsl/middleman-torrent'
   spec.license       = 'GPL3'
 
   spec.files         = `git ls-files -z`.split("\x0")
