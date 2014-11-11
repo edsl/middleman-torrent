@@ -10,6 +10,14 @@ module MiddlemanTorrent
       require 'mktorrent'
     end
 
+    # Expose configuration values
+    def after_configuration
+      app.set :torrent_tracker, options.tracker
+      app.set :torrent_file, options.file
+      app.set :torrent_name, options.name
+      app.set :torrent_private, options.private
+    end
+
     # Create the torrent after the site is built
     def after_build(builder)
       torrent = Torrent.new options.tracker

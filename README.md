@@ -42,6 +42,9 @@ Every option with default values:
     # Make torrent private
     private: false
 
+You can access this values in your app with `torrent_<option>` (e. g.
+`torrent_file`).
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/middleman-torrent/fork )
