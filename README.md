@@ -1,6 +1,6 @@
-# Middleman::Torrent
+# MiddlemanTorrent
 
-TODO: Write a gem description
+A Middleman extension to bundle your site as a torrent.
 
 ## Installation
 
@@ -20,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Activate it in Middleman's `config.rb` with defaults
+
+    activate :torrent
+
+or pass it an option
+
+    activate :torrent, file: 'another_torrent_name.torrent'
+
+Every option with default values:
+
+    # A tracker to announce
+    tracker: 'udp://tracker.publicbt.com:80'
+
+    # Torrent file name
+    file: 'site.torrent'
+
+    # Torrent name and base directory
+    name: 'site'
+
+    # Make torrent private
+    private: false
 
 ## Contributing
 
