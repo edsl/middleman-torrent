@@ -28,8 +28,9 @@ module MiddlemanTorrent
       # Move to build_dir so it's not added to the torrent
       within_build_path do
         app.sitemap.resources.each do |file|
-          torrent.add_file file.path
-          builder.say_status 'to torrent', file.path
+          # We decode the path because it can have spaces (%20) and stuff
+          torrent.add_file URI.decode(file.path)
+          builder.say_status 'to torrent', URI.decode(file.path)
         end
 
         torrent.write_torrent options.file
