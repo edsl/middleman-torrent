@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['mauricio@pasquierjuan.com.ar']
   spec.summary       = %q{A Middleman extension to bundle your site as a torrent.}
   spec.description   = %q{A Middleman extension to bundle your site as a torrent.}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/mauriciopasquier/middleman-torrent'
   spec.license       = 'GPL3'
 
   spec.files         = `git ls-files -z`.split("\x0")
